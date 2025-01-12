@@ -58,10 +58,9 @@ function Comments({ open, handleClose, setData, currentUser, data }) {
                   alt="profile"
                   class="w-12 h-12 rounded-full object-cover border-1 border-gray-300 shadow-md"
                 />
-
-                <div className="flex flex-col">
+                <div className="flex flex-col w-[85%]">
                   <span className="font-semibold text-sm">{val?.username}</span>
-                  <span className="font-normal text-sm text-gray-600">
+                  <span className="font-normal text-sm text-gray-600 w-[100%] break-words">
                     {val?.comment}
                   </span>
                 </div>
