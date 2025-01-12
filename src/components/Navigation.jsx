@@ -9,7 +9,6 @@ import ListItemText from "@mui/material/ListItemText";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import HomeIcon from "@mui/icons-material/Home";
 import SearchIcon from "@mui/icons-material/Search";
-
 import { ListItemButton, Stack, styled } from "@mui/material";
 import ExploreIcon from "@mui/icons-material/Explore";
 

@@ -13,7 +13,6 @@ function Post({ handleOpen, data, setData, setCurrentUser }) {
       const updatedInfo = prevInfo?.map((item) =>
         item?.id === value?.id ? { ...item, likes: item.likes + 1 } : item
       );
-
       return updatedInfo;
     });
   };
@@ -30,7 +29,6 @@ function Post({ handleOpen, data, setData, setCurrentUser }) {
       const updatedInfo = prevInfo?.map((item) =>
         item?.id === value?.id ? { ...item, likes: item.likes - 1 } : item
       );
-
       return updatedInfo;
     });
   };

@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { Dialog, DialogTitle, InputAdornment, TextField } from "@mui/material";
-
 import ClearIcon from "@mui/icons-material/Clear";
 import { dummyData } from "../constants/dummyComents";
 
 function Comments({ open, handleClose, setData, currentUser, data }) {
   const [comments, setComments] = useState([]);
-
   const [comment, setComment] = useState("");
 
   const handlePostClick = () => {
@@ -20,7 +18,6 @@ function Comments({ open, handleClose, setData, currentUser, data }) {
       picture: "https://img.freepik.com/free-photo/artist-white_1368-3543.jpg",
       comment,
     };
-
     setComments((prev) => [obj, ...prev]);
     setData((prevInfo) => {
       const updatedInfo = prevInfo?.map((item) =>
@@ -28,10 +25,8 @@ function Comments({ open, handleClose, setData, currentUser, data }) {
           ? { ...item, comments: item.comments + 1 }
           : item
       );
-
       return updatedInfo;
     });
-
     setComment("");
   };
 
