@@ -19,7 +19,7 @@ function Post({ handleOpen, data, setData, setCurrentUser }) {
 
   const handleLikeWithAnimation = (item) => {
     setAnimate(true);
-    setTimeout(() => setAnimate(false), 500);
+    setTimeout(() => setAnimate(false), 400);
     handleLike(item);
   };
 
